@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        * {font-size:larger;} /* too lazy to specify :p */
+        .random {color:rgb(0, 159, 165);text-decoration: underline;}
+        </style>
+    </head>
+<body>
+<p> Chris is... </p>
+<p id = "one" class = "random"></p>
+<p> who... </p>
+<p id = "two" class="random"> </p>
+<p> He... </p>
+<p id = "three" class="random"></p>
+
+<button onclick="alertlmao()" style="background-color: yellow;">Please Click Here</button>
+
+<script>
+function alertlmao() {
+alert("The underlined text changes everytime you refresh the page. All of them are true anyway.\nThere's 3*3*3 possible combinations");
+}
+
+var first = ["a huge disappointment" , "a liability to society", "a lazy procrastinator"];
+var second = ["does nothing but sit at home and laze around.", "watches youtube videos as he continues to not do his assignments.", "fantasizes about fictional, digital, 2 dimensional female drawings having a romantic interest on him."]
+var third = ["has a passion for coding which he never practices for some reason.", "Likes to bodge things and not think about future consequences like how this code could have been more optimized and easier to read", "has a dream of getting a computer that has the capability to run games better than a samsung smart fridge (This is not an exaggeration. That fridge can run CS:GO while my computer crashes in the main menu.)"];
+
+//Arrays are basically variables that have multiple values.
+
+var one = first[Math.floor(Math.random()*first.length)]; //thanks to this guy/girl on youtube. (https://www.youtube.com/watch?v=bBt_HJOZFnw)
+var two = second[Math.floor(Math.random()*second.length)]; //Math.random generates a number from 0 - 1, Math.floor rounds down a number to the nearest integer.
+var three = third[Math.floor(Math.random()*third.length)]; //Honestly, I don't know how the third part (x.length) became the dictator of what's the max number but if it works, it works.
+
+document.getElementById("one").innerHTML = one;
+document.getElementById("two").innerHTML = two;
+document.getElementById("three").innerHTML = three;
+
+console.log("hi thanks for pressing f12");
+</script>
+</body>
+</html>
