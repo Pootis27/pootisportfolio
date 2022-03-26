@@ -2,40 +2,224 @@
 <html>
     <head>
         <style>
-        * {font-size:larger;} /* too lazy to specify :p */
-        .random {color:rgb(0, 159, 165);text-decoration: underline;}
-        </style>
+            body {
+                background-image: url(https://img.wallpapersafari.com/desktop/1920/1080/30/13/LrwvIA.jpg);
+                background-repeat: no-repeat;
+                background-size:cover;
+            }
+            .likes {
+                position: absolute;
+                margin: auto;
+                top: 80%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border: 2px solid black;
+                border-radius: 25px;
+                padding: 10px;
+                backdrop-filter: blur(8px);
+                z-index: 0;
+                }
+            .photos {
+                position: absolute;
+                margin: auto;
+                top: 80%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border: 2px solid black;
+                border-radius: 25px;
+                padding: 10px;
+                backdrop-filter: blur(8px);
+                z-index: 0;
+            }
+            .center {
+                position: absolute;
+                margin: auto;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border: 2px solid black;
+                border-radius: 25px;
+                padding: 10px;
+                backdrop-filter: blur(8px);
+                z-index: 1;
+            }
+            .contents {
+                display:grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            .belowfirst {
+                font-size: large;
+                color: aliceblue;
+            }
+            .nav {
+                display:grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+            button {
+                height:40px;
+                border: 0px;
+                background-color: rgba(255, 255, 255, 0.1);
+                color:aliceblue;
+                font-size: large;
+            }
+            #likes {
+                opacity:0;
+                transition: 0.3s;
+            }
+            #photos {
+                opacity:0;
+                transition: 0.3s;
+            }
+            .second {
+                text-align: center;
+                font-size:large;
+                color:aliceblue;
+            }
+            .buttonss {
+                border-radius:25px;
+                margin:3px;
+                cursor:pointer;
+            }
+            .contentss {
+                display:grid;
+                grid-template-columns: 1.5fr 2fr;
+            }
+            .contentsss {
+                display:grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            }
+            .pictures {
+                height: 100px;
+                width: 100px;
+                object-fit: cover;
+            }
+            </style>
     </head>
 <body>
-<p> Chris is... </p>
-<p id = "one" class = "random"></p>
-<p> who... </p>
-<p id = "two" class="random"> </p>
-<p> He... </p>
-<p id = "three" class="random"></p>
+<div class="center" id="goingup">
+<div class="nav">
+<button class="buttonss" onclick="Return()">Info</button>
+<button class="buttonss" onclick="goup();likesfade()">Likes</button>
+<button class="buttonss" onclick="goup2();photosfade()">Pictures</button>
+<button class="buttonss" onclick="Discord()">Youtube</button>
+<br>
+</div>
+    <div class="contents">
+        <div class="first">
+            <img src="http://pm1.narvii.com/6347/9c0b1fed5544701c26d4f822c99048216100c730_00.jpg" height="200px" width="200px" style="border-radius:25px;object-fit:cover;object-position: 0% 0%;">
+            </div>
 
-<button onclick="alertlmao()" style="background-color: yellow;">Please Click Here</button>
+            <div class="second">
+                <p>Pootis's Info<br>私はクソオタクです</p>
+            <div style="display:grid;grid-template-columns: 1fr 1fr;">
+                <button style="background-color: rgba(0, 0, 0, 0)"><img style="height:100%;width:40%;cursor:pointer;"src="steamicon.png" onclick="location.href=`https://steamcommunity.com/id/pootispootpootpootis`;"></button>
+                <button style="background-color: rgba(0, 0, 0, 0)"><img style="height:100%;width:40%;cursor:pointer;"src="osuicon.png" onclick="location.href=`https://osu.ppy.sh/users/17302694`;"></button>
+            </div>
+                </div>
 
+        <div class="third">
+            <div style="border:1px solid rgba(255, 255, 255, 0.5);color:aliceblue;">
+                <p>Hobbies | playing games, standing around and being useless, procastinating</p>
+            </div>
+            <div style="border:1px solid rgba(255, 255, 255, 0.5);color:aliceblue;margin-top: 5px;">
+                <p>Waifus: Keqing, Tsukiko Tsutsukakushi, Mai Sakurajima, Ganyu</p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<div class="likes" id="likes">
+<div class="contentss">
+    <div>
+        <h1 style="margin : 0; padding-top:0;margin-bottom: 0;color:rgb(121, 209, 250);text-decoration: underline;">Likes</h1><br>
+        <p style="color:rgb(255, 255, 255)">Waifus, Minecraft, Genshin,<br> Lazing Around</p>
+    </div>
+    <div>
+        <iframe width="auto" height="auto" src="https://www.youtube.com/embed/aDwGMSh7ak0?autoplay=1?mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+</div>
+
+<div class="photos" id="photos">
+    <div class="contentsss">
+        <div>
+            <img src="https://static.wikia.nocookie.net/all-worlds-alliance/images/6/65/1479005942_tumblr_inline_nyglmrWWoG1rt07fz_500.jpg/revision/latest/scale-to-width-down/250?cb=20190512104055" height="150px" width="150px" style="border-radius:25px;object-fit:cover;object-position: 0% 0%;">
+        </div>
+        <div>
+            <img src="https://cdn.donmai.us/sample/ac/09/__keqing_genshin_impact_drawn_by_tikoo_616__sample-ac093d4893e85ae0f7e9a829c321b598.jpg" height="150px" width="150px" style="border-radius:25px;object-fit:cover;object-position: 50% 0%;">
+        </div>
+        <div>
+            <img src="https://static.wikia.nocookie.net/aobuta/images/d/d8/Mai_Sakurajima_Anime_-_Screenshot_1.png/revision/latest?cb=20181016030235" height="150px" width="150px" style="border-radius:25px;object-fit:cover;object-position: 50% 0%;">
+        </div>
+        <div>
+            <img src="https://cdn.donmai.us/sample/bc/e4/__keqing_and_keqing_genshin_impact_drawn_by_pdxen__sample-bce469a9f6262cb0a42a874a9999838d.jpg" height="150px" width="150px" style="border-radius:25px;object-fit:cover;object-position: 0% 10%;">
+        </div>
+        <div>
+            <img src="https://static.wikia.nocookie.net/all-worlds-alliance/images/a/a3/Tsukiko567.png/revision/latest/scale-to-width-down/250?cb=20190512104007" height="150px" width="150px" style="border-radius:25px;object-fit:cover;object-position: 0% 10%;">
+        </div>
+        <div>
+            <img src="https://cdn.donmai.us/sample/15/43/__keqing_and_keqing_genshin_impact_drawn_by_doham__sample-154333d543f9cbb184e1df356296935a.jpg" height="150px" width="150px" style="border-radius:25px;object-fit:cover;object-position: 0% 10%;">
+        </div>
+        <div>
+            <img src="https://cdn.discordapp.com/attachments/928140330124062750/957338495469355138/IMG_8255.jpg" height="150px" width="150px" style="border-radius:25px;object-fit:cover;object-position: 0% 20%;">
+        </div>
+        <div>
+            <img src="https://pbs.twimg.com/media/EncOZAcW8AMJMpC?format=jpg&name=4096x4096" height="150px" width="150px" style="border-radius:25px;object-fit:cover;object-position: 0% 40%;">
+        </div>
+    </div>
+    </div>
 <script>
-function alertlmao() {
-alert("The underlined text changes everytime you refresh the page. All of them are true anyway.\nThere's 3*3*3 possible combinations");
-}
-
-var first = ["a huge disappointment" , "a liability to society", "a lazy procrastinator"];
-var second = ["does nothing but sit at home and laze around.", "watches youtube videos as he continues to not do his assignments.", "fantasizes about fictional, digital, 2 dimensional female drawings having a romantic interest on him."]
-var third = ["has a passion for coding which he never practices for some reason.", "Likes to bodge things and not think about future consequences like how this code could have been more optimized and easier to read", "has a dream of getting a computer that has the capability to run games better than a samsung smart fridge (This is not an exaggeration. That fridge can run CS:GO while my computer crashes in the main menu.)"];
-
-//Arrays are basically variables that have multiple values.
-
-var one = first[Math.floor(Math.random()*first.length)]; //thanks to this guy/girl on youtube. (https://www.youtube.com/watch?v=bBt_HJOZFnw)
-var two = second[Math.floor(Math.random()*second.length)]; //Math.random generates a number from 0 - 1, Math.floor rounds down a number to the nearest integer.
-var three = third[Math.floor(Math.random()*third.length)]; //Honestly, I don't know how the third part (x.length) became the dictator of what's the max number but if it works, it works.
-
-document.getElementById("one").innerHTML = one;
-document.getElementById("two").innerHTML = two;
-document.getElementById("three").innerHTML = three;
-
-console.log("hi thanks for pressing f12");
+    function Discord() {
+        location.href = `https://www.youtube.com/channel/UCZYswk4AUEM6ywq2GuRbXwA`;
+    }
+    function goup() {
+        let mainel = document.getElementById("goingup");
+        mainel.style.top = "40%";
+        mainel.style.transition = "0.3s";
+    }
+    function goup2() {
+        let mainel = document.getElementById("goingup");
+        mainel.style.top = "30%";
+        mainel.style.transition = "0.3s";
+    }
+    function likesfade() {
+        let mainel = document.getElementById("goingup");
+        let likesel = document.getElementById("likes");
+        let photosel = document.getElementById("photos");
+        likesel.style.opacity = "1";
+        likesel.style.transition = "0.3s";
+        photosel.style.opacity = "0";
+        photosel.style.transition = "0.3s";
+        likesel.style.zIndex = "1";
+        photosel.style.zIndex = "0";
+        mainel.style.zIndex = "0";
+    }
+    function photosfade() {
+        let mainel = document.getElementById("goingup");
+        let photosel = document.getElementById("photos");
+        let likesel = document.getElementById("likes");
+        photosel.style.opacity = "1";
+        photosel.style.transition = "0.3s";
+        likesel.style.opacity = "0";
+        likesel.style.transition = "0.3s";
+        likesel.style.zIndex = "0";
+        photosel.style.zIndex = "1";
+        mainel.style.zIndex = "0";
+    }
+    function Return() {
+        let mainel = document.getElementById("goingup");
+        let likesel = document.getElementById("likes");
+        let photosel = document.getElementById("photos");
+        mainel.style.top = "50%";
+        mainel.style.transition = "0.3s";
+        likesel.style.opacity = "0";
+        likesel.style.transition = "0.3s";
+        photosel.style.opacity = "0";
+        photosel.style.transition = "0.3s";
+        likesel.style.zIndex = "0";
+        photosel.style.zIndex = "0";
+        mainel.style.zIndex = "1";
+    }
 </script>
 </body>
 </html>
