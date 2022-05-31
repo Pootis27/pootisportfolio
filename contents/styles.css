@@ -1,0 +1,184 @@
+.itemnametest {text-align:center;font-size:2.1em;color:white;text-decoration:underline;position:absolute;}
+.price {text-align:center;font-size:2em;color:lightgreen;}
+.pricespec {text-align:center;font-size:2em;color:rgb(247, 51, 51);}
+tr, td {border:4px solid black;width:33%;}
+table {border-spacing:75px;padding:0;    animation-name:free;animation-duration:2s;animation-iteration-count:1;}
+.sidebar {width:15%;height:100%;position:relative;}
+.main {min-width:100%;height:100%;position:relative;padding-top: 55px;}
+.text {font-size:200%;}
+.title {color:Red;text-align:center;font-size:5em;height:100px;line-height:90px;animation-name:free;animation-duration:2s;opacity:1;animation-iteration-count: 1;animation-delay:0;}
+.colorchange {color:red;animation-name:colorchange;animation-duration:6s;animation-iteration-count: infinite;animation-delay:3s;animation-direction: alternate;}
+.shopname {color:white;text-align:left;font-size:3em;font-family:'Brush Script MT', cursive;position:absolute;padding-left:15px;}
+.grid {
+    display:grid;
+    justify-content: center;
+    gap:25px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+.test {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    position:relative;
+}
+.description {
+    vertical-align:text-top;
+    color:cyan;
+    position:relative;
+    font-size:1.2em;
+    padding: 10px;
+    padding-bottom: 70px;
+}
+.description1 {
+    vertical-align:text-top;
+    color:cyan;
+    position:relative;
+    font-size:1em;
+    padding: 10px;
+    bottom:50px;
+}
+.description2 {
+    vertical-align:text-top;
+    color:cyan;
+    position:relative;
+    font-size:0.9em;
+    padding: 10px;
+    bottom:40px;
+}
+.img {
+    width:250px;
+    height:250px;
+    display:block;
+    animation-duration:2s;
+    animation-fill-mode:forwards;
+    animation-iteration-count: 1;
+    animation-direction:alternate;
+    position:relative;
+    animation-name:free;
+    animation-duration:2s;
+    animation-iteration-count:1;
+    border:5px solid black;
+}
+.container {
+    position:relative;
+    text-align:top;
+}
+.overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.6);
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    color:green;
+    align-items: center;
+    justify-content: center;
+    opacity:0;
+    transition: opacity 0.25s;
+}
+
+.overlay:hover
+{
+ opacity:1;
+ transition: opacity 0.25s;
+}
+
+* {
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+nav ul {
+    float:right;
+    margin-right:20px;
+    z-index: 3;
+    align-content: right;
+}
+nav ul li {
+    display:inline-block;
+    line-height: 55px;
+    margin: 0 10px;
+    z-index: 3;
+
+}
+.navback {
+    width: 100%;
+    height: 55px;
+    background-color: rgba(0, 110, 255, 0.6);
+    position:fixed;
+    z-index: 3;
+}
+a {
+    display:inline-block;
+    color:rgb(255, 255, 255);
+    padding: 0px 13px;
+    border-radius: 3px;
+    z-index: 4;
+    opacity:1;
+    transition:0.25s;
+}
+a:hover {
+    background:rgba(0, 117, 172, 0.6);
+    transition:0.3s;
+}
+body::-webkit-scrollbar {
+    width: 0.5rem;
+}
+body::-webkit-scrollbar-track {
+    background: black;
+}
+
+body::-webkit-scrollbar-thumb {
+    background:lightseagreen;
+}
+.descContainer {
+    display:grid;
+    grid-template-columns: 10fr 7fr;
+
+    animation-name: yes;
+    animation-duration: 0.5s;
+}
+.homedesc {
+    font-family:"Lucida Console", monospace;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size:2em;
+    width:90%;
+    margin-left:7%;
+    margin-top:12%;
+}
+
+@keyframes free
+{
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@keyframes colorchange
+{
+0% {color:red;}
+20% {color:blue;}
+40% {color:green;}
+60% {color:yellow;}
+80% {color:black;}
+}
+
+@media (max-width: 840px) {
+    .shopname {opacity: 0; transition:0.5s}
+    
+}
+@media (min-width: 841px) {
+    .shopname {opacity: 1; transition:0.5s}
+}
+
+@keyframes yes {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
