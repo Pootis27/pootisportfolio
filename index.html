@@ -1,26 +1,40 @@
-<html scrolling=no>
-<head>
-<link rel="stylesheet" href="contents/styles.css">
-</head>
-<title>Definitely Legit Shop</title>
-<body scroll="no" style="background-image: url(contents/hi2.jpg);">
-<div>
-    <div class="navback">
-<nav>
-    <p class="shopname" name="shopname">Definitely Legit Shop</p>
-    <ul>
-        <li><audio controls src="contents/Team Fortress 2 Soundtrack _ Upgrade Station.mp3" type="audio/mpeg" loop style="z-index:0;height:20px;opacity:0.3;width:100px;"></audio></li>
-        <li><a href="contents/Home.html" target="main section">Home</a></li>
-        <li><a href="contents/Essentials.html" target="main section">Essentials</a></li>
-        <li><a href="contents/Entertainment.html" target="main section">Entertainment</a></li>
-    </ul>
-</nav>
-</div>
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1 {
+               text-align: center;
+               font-size: 3.5rem;
+            }
+            button {
+               margin:0 auto;
+               display:block;
+               font-size:x-large;
+               font-weight:1000;
+               border-radius: 16px;
+               cursor:pointer;
+               margin-top:4rem;
+            }
+            button:hover {
+                filter: brightness(75%);
+                cursor: pointer;
+                transition-duration: 250ms;
+            }
+            button:not(:hover) {
+                transition-duration:250ms;
+            }
+        </style>
+    </head>
+    <body onload="toggle_load()">
+        <script src="contents/script.js"></script>
 
-<iframe class="main" name="main section" frameBorder="0" src="contents/Home.html"></iframe>
-</div>
+        <h1> Test Title For Here Lmao</h1>
 
-<!-- so apparently adding !DOCTYPE will mess it up for some reason. Behold, the spaghetti code -->
-</body>
+        <a href="contents/learn.html" style="text-decoration: none;"><button style="height:5rem;width: 20rem;">Learn</button></a> <br>
+
+            <a href="contents/main game.html" style="text-decoration: none;"><button onClick="game_execute()" style="height:5rem;width: 20rem;">Practice With A Game </button></a> <br>
+
+        <button onClick="toggle()" style="height:5rem;width: 20rem; background-color:green;transition-duration: 300ms;" id="button_toggle">Play with Hints?</button><br>       
+    </body>
 </html>
 
