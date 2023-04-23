@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            button:hover {
+                filter: brightness(85%);
+                cursor: pointer;
+                transition-duration: 250ms;
+            }
+            button:not(:hover) {
+                transition-duration:250ms;
+            }
+        </style>
+    </head>
+    <body style="margin:0px;" onload="game_execute()">
+        <script src="script.js">
+        </script> 
+        <ul style="overflow: hidden;list-style-type: none;padding:0;margin:0;background-color:#333;position:fixed;width:100%;">
+            <li><a href="../main menu.html">Home</a></li>
+            <li>Learn</li>
+        </ul>
+        <div style="width:100%;height:auto;"> <!-- Division that covers the entire page -->
+        <div style="width:100%;height:40%;display:inline-block;vertical-align: top;">  <!-- Division that contains the question-->
+            <p style="font-size:x-large;padding:20px;padding-top:40px;" id="question">
+                The CEO of battery manufacturing company claims that an average battery lasts 3 days. A researcher randomly selects 20 batteries for testing. The sampled bulbs last an average of 2.5 days, with a standard deviation of 5 days. If the CEO’s claim were true, what is the probability that 15 randomly selected batteries would have an average life of no more than 2.5 days?
+            </p>
+        </div>
+        <div style="width:54.6%;height:60%;display:inline-block;vertical-align: top;"> <!-- Division that contains the visualization -->
+            <div style="width:65%;height:50%;display:block;margin-left:auto;margin-right: auto;background-color: white;margin-top:10%; border-radius: 16px;border: 4px solid black;">
+                <p style="padding:auto;display:block;line-height:normal;text-align:center;font-size:x-large;" id="illustration"></p>
+            </div>
+            
+
+
+        </div>
+        <div style="width:45%;height:60%;display:inline-block;vertical-align: top;"> <!-- Division that contains the options-->
+            <div style="padding: 10px 10px 10px 10px;" class="answer_layout">
+                <div class="grid-item" style="grid-row: 1; grid-column:1;">
+                    <button style="height:75%;width:75%;font-size:2rem;border-width: 4px;" onclick="your_answer('Z-test')">Z-test</button>
+                </div>
+                <div class="grid-item" style="grid-row: 1; grid-column:2;">
+                    <button style="height:75%;width:75%;font-size:2rem;border-width: 4px;" onclick="your_answer('T-test')">T-test</button>
+                </div>
+            
+                <div class="grid-item" style="grid-column: span 2;">
+                    <button style="height:75%;width:75%;font-size:2rem;border-width: 4px;" onclick="your_answer('Either')">Either</button>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </body>
+</html>
