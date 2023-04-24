@@ -151,7 +151,7 @@
         }
 
         function About() {
-            alert("The developers of this website are Chris Euan De Leon and Lawrence Adio. The website's main objective is to teach users on how to properly choose when to use a Z-distribution and a T-distribution when faced with certain probabilistic problems involving sampling distribution of the sample means. The website caters to those who prefer the "discuss and then practice immediately approach" and those who like to go on their own pace. It has two main pages which are the "Learn" page and the "Game" page. The Learn page discusses the topic at hand and teaches the user while the Game page lets the user take into practice what they have learned by having them answer a set of questions each with a randomized sample space, standard deviation, and type of distribution.");
+            alert("The developers of this website are Chris Euan De Leon and Lawrence Adio. The website's main objective is to teach users on how to properly choose when to use a Z-distribution and a T-distribution when faced with certain probabilistic problems involving sampling distribution of the sample means. The website caters to those who prefer the 'discuss and then practice immediately approach' and those who like to go on their own pace. It has two main pages which are the 'Learn' page and the 'Game' page. The Learn page discusses the topic at hand and teaches the user while the Game page lets the user take into practice what they have learned by having them answer a set of questions each with a randomized sample space, standard deviation, and type of distribution.");
         }
 
         function load() {
