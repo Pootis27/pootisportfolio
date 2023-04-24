@@ -1,0 +1,24 @@
+li {
+  float: left;
+  padding-left:10px;
+  }
+.answer_layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height:95%;
+  width:95%;
+  text-align: center;
+}
+
+li a {
+  display:block;
+  text-align:center;
+  text-decoration: none;
+  padding: 14px 16px;
+  color:white;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+li a:hover {
+  background-color: #111;
+}
