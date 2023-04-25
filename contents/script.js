@@ -74,7 +74,7 @@
             if (distribution_type == 1 && known_standard_deviation == 1) { 
                 correct_answer = "Z-test";
             }
-            else if (sample_space <= 30 && (known_standard_deviation == 0  || distribution_type == 0)) {
+            else if (sample_space < 30 && (known_standard_deviation == 0  || distribution_type == 0)) {
                 correct_answer = "T-test";
             }
             else {
