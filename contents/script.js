@@ -86,7 +86,7 @@
             var qstn = document.getElementById("question");
             qstn.innerText = situations[situation_random];
             var illus = document.getElementById("illustration");
-            illus.innerText = "Population Standard Deviation: " +standard_deviation + "\nDistribution: " + distribution + "\n Sample Space: " + sample_space;
+            illus.innerText = "Population Standard Deviation: " +standard_deviation + "\nDistribution: " + distribution + "\n Sample Size: " + sample_space;
             let toggle_state_transfer = sessionStorage.getItem("toggle_state");                                                                     
             //Handles if illustration will appear or not
 
